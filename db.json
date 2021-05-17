@@ -1,14 +1,1025 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "version": "2.0.1",
+  "rss": "<LINK TO RSS FEED>",
+  "discord": {
+    "clientId": "785765570020638771",
+    "smallImageText": "Suscribite a Farfadox en Twitch para acceder a Farfania!",
+    "smallImageKey": "logotransparente"
+  },
+  "servers": [
+    {
+      "id": "Farfania-1.12.2",
+      "name": "Farfania (Minecraft 1.12.2)",
+      "description": "Servidor exclusivo para suscriptores de Farfadox",
+      "icon": "http://68.183.121.7/servers/Farfania-1.12.2/icon.png",
+      "version": "2.0.1",
+      "address": "189.1.168.37:25588",
+      "minecraftVersion": "1.12.2",
+      "discord": {
+        "shortId": "Farfania",
+        "largeImageText": "Farfania - Servidor de Farfadox",
+        "largeImageKey": "farfanialogo"
+      },
+      "mainServer": true,
+      "autoconnect": false,
+      "modules": [
+        {
+          "id": "net.minecraftforge:forge:1.12.2-14.23.5.2854:universal",
+          "name": "Minecraft Forge",
+          "type": "ForgeHosted",
+          "artifact": {
+            "size": 4464068,
+            "MD5": "ff6f0650ff84d4c8e03da9a4f536d9e1",
+            "url": "http://68.183.121.7/repo/lib/net/minecraftforge/forge/1.12.2-14.23.5.2854/forge-1.12.2-14.23.5.2854-universal.jar"
+          },
+          "subModules": [
+            {
+              "id": "1.12.2-14.23.5.2854",
+              "name": "Minecraft Forge (version.json)",
+              "type": "VersionManifest",
+              "artifact": {
+                "size": 10873,
+                "MD5": "814f52398b6ebf70d22571307d2298eb",
+                "url": "http://68.183.121.7/repo/versions/1.12.2-forge-14.23.5.2854/1.12.2-forge-14.23.5.2854.json"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-debug-all:5.2@jar",
+              "name": "Minecraft Forge (asm-debug-all)",
+              "type": "Library",
+              "artifact": {
+                "size": 387903,
+                "MD5": "fe5f20404ccdee9769ef05dc4b47ba98",
+                "url": "http://68.183.121.7/repo/lib/org/ow2/asm/asm-debug-all/5.2/asm-debug-all-5.2.jar"
+              }
+            },
+            {
+              "id": "net.minecraft:launchwrapper:1.12@jar",
+              "name": "Minecraft Forge (launchwrapper)",
+              "type": "Library",
+              "artifact": {
+                "size": 32999,
+                "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
+                "url": "http://68.183.121.7/repo/lib/net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar"
+              }
+            },
+            {
+              "id": "org.jline:jline:3.5.1@jar",
+              "name": "Minecraft Forge (jline)",
+              "type": "Library",
+              "artifact": {
+                "size": 614590,
+                "MD5": "4c20d2879ed2bd75a0771ce29e89f6b0",
+                "url": "http://68.183.121.7/repo/lib/org/jline/jline/3.5.1/jline-3.5.1.jar"
+              }
+            },
+            {
+              "id": "com.typesafe.akka:akka-actor_2.11:2.3.3@jar",
+              "name": "Minecraft Forge (akka-actor_2.11)",
+              "type": "Library",
+              "artifact": {
+                "size": 2514991,
+                "MD5": "541440ca0819ebada47d6d1a8b3ee9e1",
+                "url": "http://68.183.121.7/repo/lib/com/typesafe/akka/akka-actor_2.11/2.3.3/akka-actor_2.11-2.3.3.jar"
+              }
+            },
+            {
+              "id": "com.typesafe:config:1.2.1@jar",
+              "name": "Minecraft Forge (config)",
+              "type": "Library",
+              "artifact": {
+                "size": 219554,
+                "MD5": "3aaf3c6e76a68e732c17d4a7e9877d81",
+                "url": "http://68.183.121.7/repo/lib/com/typesafe/config/1.2.1/config-1.2.1.jar"
+              }
+            },
+            {
+              "id": "org.scala-lang:scala-actors-migration_2.11:1.1.0@jar",
+              "name": "Minecraft Forge (scala-actors-migration_2.11)",
+              "type": "Library",
+              "artifact": {
+                "size": 58018,
+                "MD5": "f5e79398daa1806f8b17311a3c782723",
+                "url": "http://68.183.121.7/repo/lib/org/scala-lang/scala-actors-migration_2.11/1.1.0/scala-actors-migration_2.11-1.1.0.jar"
+              }
+            },
+            {
+              "id": "org.scala-lang:scala-compiler:2.11.1@jar",
+              "name": "Minecraft Forge (scala-compiler)",
+              "type": "Library",
+              "artifact": {
+                "size": 13449765,
+                "MD5": "06030143bf86ca896fb6ccfd679b5760",
+                "url": "http://68.183.121.7/repo/lib/org/scala-lang/scala-compiler/2.11.1/scala-compiler-2.11.1.jar"
+              }
+            },
+            {
+              "id": "org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2_mc@jar",
+              "name": "Minecraft Forge (scala-continuations-library_2.11)",
+              "type": "Library",
+              "artifact": {
+                "size": 25365,
+                "MD5": "004d7007abbcee858d3ca2c3ccbcbaab",
+                "url": "http://68.183.121.7/repo/lib/org/scala-lang/plugins/scala-continuations-library_2.11/1.0.2_mc/scala-continuations-library_2.11-1.0.2_mc.jar"
+              }
+            },
+            {
+              "id": "org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2_mc@jar",
+              "name": "Minecraft Forge (scala-continuations-plugin_2.11.1)",
+              "type": "Library",
+              "artifact": {
+                "size": 206575,
+                "MD5": "359c4a6743a082c689039482eed78670",
+                "url": "http://68.183.121.7/repo/lib/org/scala-lang/plugins/scala-continuations-plugin_2.11.1/1.0.2_mc/scala-continuations-plugin_2.11.1-1.0.2_mc.jar"
+              }
+            },
+            {
+              "id": "org.scala-lang:scala-library:2.11.1@jar",
+              "name": "Minecraft Forge (scala-library)",
+              "type": "Library",
+              "artifact": {
+                "size": 5538130,
+                "MD5": "1d88f665219e6006c5dd82d71c525c0f",
+                "url": "http://68.183.121.7/repo/lib/org/scala-lang/scala-library/2.11.1/scala-library-2.11.1.jar"
+              }
+            },
+            {
+              "id": "org.scala-lang:scala-parser-combinators_2.11:1.0.1@jar",
+              "name": "Minecraft Forge (scala-parser-combinators_2.11)",
+              "type": "Library",
+              "artifact": {
+                "size": 419701,
+                "MD5": "4e694499c965af4a02599c99d4f0b196",
+                "url": "http://68.183.121.7/repo/lib/org/scala-lang/scala-parser-combinators_2.11/1.0.1/scala-parser-combinators_2.11-1.0.1.jar"
+              }
+            },
+            {
+              "id": "org.scala-lang:scala-reflect:2.11.1@jar",
+              "name": "Minecraft Forge (scala-reflect)",
+              "type": "Library",
+              "artifact": {
+                "size": 4372892,
+                "MD5": "7878fac044e4e4b576bb35a77ccc34fc",
+                "url": "http://68.183.121.7/repo/lib/org/scala-lang/scala-reflect/2.11.1/scala-reflect-2.11.1.jar"
+              }
+            },
+            {
+              "id": "org.scala-lang:scala-swing_2.11:1.0.1@jar",
+              "name": "Minecraft Forge (scala-swing_2.11)",
+              "type": "Library",
+              "artifact": {
+                "size": 726500,
+                "MD5": "1009d69e4948045383f2a7a334348af5",
+                "url": "http://68.183.121.7/repo/lib/org/scala-lang/scala-swing_2.11/1.0.1/scala-swing_2.11-1.0.1.jar"
+              }
+            },
+            {
+              "id": "org.scala-lang:scala-xml_2.11:1.0.2@jar",
+              "name": "Minecraft Forge (scala-xml_2.11)",
+              "type": "Library",
+              "artifact": {
+                "size": 648679,
+                "MD5": "c2d7e66495afe14545c31b21e99879ef",
+                "url": "http://68.183.121.7/repo/lib/org/scala-lang/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar"
+              }
+            },
+            {
+              "id": "lzma:lzma:0.0.1@jar",
+              "name": "Minecraft Forge (lzma)",
+              "type": "Library",
+              "artifact": {
+                "size": 5762,
+                "MD5": "a3e3c3186e41c4a1a3027ba2bb23cdc6",
+                "url": "http://68.183.121.7/repo/lib/lzma/lzma/0.0.1/lzma-0.0.1.jar"
+              }
+            },
+            {
+              "id": "java3d:vecmath:1.5.2@jar",
+              "name": "Minecraft Forge (vecmath)",
+              "type": "Library",
+              "artifact": {
+                "size": 318956,
+                "MD5": "e5d2b7f46c4800a32f62ce75676a5710",
+                "url": "http://68.183.121.7/repo/lib/java3d/vecmath/1.5.2/vecmath-1.5.2.jar"
+              }
+            },
+            {
+              "id": "net.sf.trove4j:trove4j:3.0.3@jar",
+              "name": "Minecraft Forge (trove4j)",
+              "type": "Library",
+              "artifact": {
+                "size": 2523218,
+                "MD5": "8fc4d4e0129244f9fd39650c5f30feb2",
+                "url": "http://68.183.121.7/repo/lib/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar"
+              }
+            },
+            {
+              "id": "org.apache.maven:maven-artifact:3.5.3@jar",
+              "name": "Minecraft Forge (maven-artifact)",
+              "type": "Library",
+              "artifact": {
+                "size": 54961,
+                "MD5": "7741ebf29690ee7d9dde9cf4376347fc",
+                "url": "http://68.183.121.7/repo/lib/org/apache/maven/maven-artifact/3.5.3/maven-artifact-3.5.3.jar"
+              }
+            },
+            {
+              "id": "net.sf.jopt-simple:jopt-simple:5.0.3@jar",
+              "name": "Minecraft Forge (jopt-simple)",
+              "type": "Library",
+              "artifact": {
+                "size": 78175,
+                "MD5": "0a5ec84e23df9d7cfb4063bc55f2744c",
+                "url": "http://68.183.121.7/repo/lib/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar"
+              }
+            }
+          ]
+        },
+        {
+          "id": "com.teammetallurgy:aquaculture:1.12.2-1.6.8@jar",
+          "name": "Aquaculture",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 186686,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/Aquaculture.jar",
+            "MD5": "168ee7ded8fa21d49700b99e8617c79b"
+          }
+        },
+        {
+          "id": "superhb.arcademod:arcademod:2.1.5@jar",
+          "name": "Arcade Mod",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 837674,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/ArcadeMod.jar",
+            "MD5": "7ba03ff65ba6b2b85999228bf7332370"
+          }
+        },
+        {
+          "id": "net.mcreator:byg:1.7.1@jar",
+          "name": "Biomes You Go ",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 10937946,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/BiomesYouGo.jar",
+            "MD5": "ad04f6e9664a48fcd96056c7b6a99944"
+          }
+        },
+        {
+          "id": "net.casinocraft.mod:casinocraft:Version 6@jar",
+          "name": "CasinoCraft",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1061156,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/CasinoCraft.jar",
+            "MD5": "29216f8d749b9df27a3d16d468f935f9"
+          }
+        },
+        {
+          "id": "dmfmm.catwalks:catwalks:1.12.2-4.0.45@jar",
+          "name": "Catwalks",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 210199,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/Catwalks.jar",
+            "MD5": "85d969acd1ac3e1aff4fb0450e2c9ffd"
+          }
+        },
+        {
+          "id": "lumien.custommainmenu:custommainmenu:2.0.9.1@jar",
+          "name": "Custom Main Menu",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 91121,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/CMM.jar",
+            "MD5": "c12200ad89f9399d5bdcbe9da7900bb9"
+          }
+        },
+        {
+          "id": "com.creativemd:creativecore:1.10@jar",
+          "name": "CreativeCore",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1090904,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/CreativeCore.jar",
+            "MD5": "ce9692bdbf5a16c1d48354b67fb8022e"
+          }
+        },
+        {
+          "id": "lumien.custombackgrounds:custombackgrounds:1.1.1@jar",
+          "name": "Custom Backgrounds",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 4140,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/CustomBackgrounds-MC1.12-1.1.1.jar",
+            "MD5": "b0f20b60bba201bbcf63a6d18cd191db"
+          }
+        },
+        {
+          "id": "com.mrcrayfish.device:cdm:0.4.1@jar",
+          "name": "MrCrayfish's Device Mod",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 2733808,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/DeviceMod.jar",
+            "MD5": "26fa65c0fa5462834d6eebfa4055a792"
+          }
+        },
+        {
+          "id": "team.creative:enhancedvisuals:1.3@jar",
+          "name": "Enhanced Visuals",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 3771649,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/optionaloff/EnhancedVisuals_v1.3.22_mc1.12.2.jar",
+            "MD5": "f7580bbd1a7819d454af4e33a7096183"
+          },
+          "required": {
+            "value": false,
+            "def": false
+          }
+        },
+        {
+          "id": "com.pau101:fairylights:2.2.0@jar",
+          "name": "Fairy Lights",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1161511,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/FairyLights.jar",
+            "MD5": "e6bc3eec7d73c3b5f2f1d88aa8b0f933"
+          }
+        },
+        {
+          "id": "com.kamildanak.minecraft:foamflower:1.12.2-1.0.0.0-beta1@jar",
+          "name": "Foamflower",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 67908,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/FoamFlower.jar",
+            "MD5": "6f45a5552ea322d4419660682d195765"
+          }
+        },
+        {
+          "id": "net.shadowfacts:forgelin:1.8.4@jar",
+          "name": "Shadowfacts' Forgelin",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 6278399,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/Forgelin.jar",
+            "MD5": "2da79fce72265eab0541e565636d389d"
+          }
+        },
+        {
+          "id": "com.mrcrayfish.furniture:cfm:6.3.1@jar",
+          "name": "MrCrayfish's Furniture Mod",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 2435626,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/Furniture.jar",
+            "MD5": "7e4f4d160032658e095eff8221977800"
+          }
+        },
+        {
+          "id": "thedarkcolour.futuremc:futuremc:1.12.2-0.2.4.1@jar",
+          "name": "Future MC",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 14349536,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/FutureMC.jar",
+            "MD5": "b6d22dc651a5f1c7627d46763f91f674"
+          }
+        },
+        {
+          "id": "mastef_chief.gitwebbuilder:gitwebbuilder:1.1@jar",
+          "name": "GitWeb Builder",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 246083,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/GitWebBuilder.jar",
+            "MD5": "4b490617405ace2c069c6cbdef9d81b2"
+          }
+        },
+        {
+          "id": "com.mrcrayfish.guns:cgm:0.16.2@jar",
+          "name": "MrCrayfish's Gun Mod - Farfania Edition",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1067287,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/GunsMod2.jar",
+            "MD5": "b04808fa858011e4f8330f1dee8d34fc"
+          }
+        },
+        {
+          "id": "mcp.mobius:waila:1.8.26@jar",
+          "name": "Waila",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 453778,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/Hwyla.jar",
+            "MD5": "bca1c069d9171d331d211d24e8a3b770"
+          }
+        },
+        {
+          "id": "xyz.kaydax:ido:1.1.0@jar",
+          "name": "Ido - 1.12 movement enhancement",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 20516,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/IDO.jar",
+            "MD5": "103522249c0fe86372d6bfede026d35d"
+          }
+        },
+        {
+          "id": "net.doubledoordev:itemblacklist:1.4.3@jar",
+          "name": "Item Blacklist",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 46403,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/ItemBlackList.jar",
+            "MD5": "f668d832dc9418d089de43a99e7cbf7b"
+          }
+        },
+        {
+          "id": "mezz.jei:jei:4.15.0.291@jar",
+          "name": "Just Enough Items",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 651473,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/jei.jar",
+            "MD5": "cfdbfecefb1bdc5a3fbbcecbfecb0545"
+          }
+        },
+        {
+          "id": "net.malisis.core:malisiscore:1.12.2-6.5.1-SNAPSHOT@jar",
+          "name": "MalisisCore",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1939783,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/MalisisCore.jar",
+            "MD5": "ccc183a97d7b9688a49bf29b61343f49"
+          }
+        },
+        {
+          "id": "net.malisis.doors:malisisdoors:1.12.2-7.3.0@jar",
+          "name": "MalisisDoors",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1741669,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/MalisisDoors.jar",
+            "MD5": "6d0f129ff9a05f84add5b2209a6d0284"
+          }
+        },
+        {
+          "id": "net.mcreator:matemoddiscos:1.0.0@jar",
+          "name": "MateMod Discos",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 151319959,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/MatemodDiscos.jar",
+            "MD5": "60dfd95fa96f1e51f18f52f860bb6cde"
+          }
+        },
+        {
+          "id": "net.mcreator:mateposta:1.0.1@jar",
+          "name": "MATEPOSTA",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1094622,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/MATEPOSTA.jar",
+            "MD5": "c2f37c35d92ab41b8009a23ecde99081"
+          }
+        },
+        {
+          "id": "net.montoyo:mcef:1.12.2-1.11@jar",
+          "name": "Minecraft Chromium Embedded Framework",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 344339,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/MCEF.jar",
+            "MD5": "7d138063173928704c19a68c58c62f5d"
+          }
+        },
+        {
+          "id": "mchorse.mclib:mclib:1.0.4-1.12.2@jar",
+          "name": "McLib",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 159061,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/MCLIB.jar",
+            "MD5": "150a1a4c35d8a2acde60fdff83c31fb1"
+          }
+        },
+        {
+          "id": "com.mcwbridges.kikoz:mcwbridges:1.0.4@jar",
+          "name": "Macaw's Bridges",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 118950,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/MCWBridges.jar",
+            "MD5": "d4358ca94cd469690995e309737b6694"
+          }
+        },
+        {
+          "id": "com.mcwdoors.kikoz:mcwdoors:1.0.0@jar",
+          "name": "Macaw's Doors",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 324896,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/MCWDoors.jar",
+            "MD5": "166e7601ccca39356bda6d6892070ddb"
+          }
+        },
+        {
+          "id": "com.mcwwindows.kikoz:mcwwindows:1.0.0@jar",
+          "name": "Macaw's Windows",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 124758,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/MCWWindows.jar",
+            "MD5": "34004b76ba9241a0b2554fecbec18547"
+          }
+        },
+        {
+          "id": "com.acness:modernlamps:1.0.3@jar",
+          "name": "Modern Lights",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 100883,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/ModernLights.jar",
+            "MD5": "2df4c67e989492a4ec410d07362049ad"
+          }
+        },
+        {
+          "id": "com.supermartijn642:movingelevators:1.2.23-mc1.12@jar",
+          "name": "Moving Elevators",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 205486,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/MovingElevators.jar",
+            "MD5": "871ea39f3adcf6602e2517f687c3a37b"
+          }
+        },
+        {
+          "id": "astrotibs.notenoughpets:notenoughpets:2.2.0@jar",
+          "name": "Not Enough Pets",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 833841,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/NotEnoughPets.jar",
+            "MD5": "7147dace4ba1421f5de1a5f9fa87f03e"
+          }
+        },
+        {
+          "id": "alhetta.notenoughscaffold:notenoughscaffold:1.10@jar",
+          "name": "Not Enough Scaffold",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 33065,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/NotEnoughScaffold-1.12.2-1.10.jar",
+            "MD5": "ceb63578192fe9b1092df2b135b3a31c"
+          }
+        },
+        {
+          "id": "com.mrcrayfish.obfuscate.asm:obfuscate:0.0.0@jar",
+          "name": "Obfuscate",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 129099,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/Obfuscate.jar",
+            "MD5": "a5d3ac71ec8762fe72a91465de6d30a3"
+          }
+        },
+        {
+          "id": "com.creativemd.opf:opframe:1.1@jar",
+          "name": "OnlinePictureFrame",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 78141,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/OnlinePictureFrame.jar",
+            "MD5": "676e3a6d3f149d2324d91173f638f1cc"
+          }
+        },
+        {
+          "id": "net.optifine:optifine:1.12.2_HD_U_F5@jar",
+          "name": "OptiFine 1.12.2_HD_U_F5",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 2598821,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/optionalon/Optifine.jar",
+            "MD5": "043ac1db6f7441ea4cf31bcb621aff0b"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "guichaguri.betterfps:betterfps:1.4.8@jar",
+          "name": "BetterFps",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 155196,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/optionaloff/OPTIMIZACION%20-%20BetterFPS.jar",
+            "MD5": "d36f4d3c0f96e99a9a1ad2e8eeda1fc4"
+          },
+          "required": {
+            "value": false,
+            "def": false
+          }
+        },
+        {
+          "id": "pl.asie:foamfix:0.10.10-1.12.2@jar",
+          "name": "FoamFix",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 201683,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/optionaloff/OPTIMIZACION%20-%20FoamFix.jar",
+            "MD5": "bba94f1ee252fcfbd2d52779f5c2f2b1"
+          },
+          "required": {
+            "value": false,
+            "def": false
+          }
+        },
+        {
+          "id": "me.jellysquid.mods.phosphor.mod:phosphor-lighting:1.12.2-0.2.6@jar",
+          "name": "Phosphor",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1082311,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/optionaloff/OPTIMIZACION%20-%20Phosphor.jar",
+            "MD5": "9892af4ac4f8ca4222138a245592227c"
+          },
+          "required": {
+            "value": false,
+            "def": false
+          }
+        },
+        {
+          "id": "texfix:texfix:4.0@jar",
+          "name": "TextureFix",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 7052,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/optionaloff/OPTIMIZACION%20-%20TexFix.jar",
+            "MD5": "241a28a767464fa15f9bd642c2d9f673"
+          },
+          "required": {
+            "value": false,
+            "def": false
+          }
+        },
+        {
+          "id": "net.mcreator:alarms:1.3@jar",
+          "name": "Alarms",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1612588,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/OrvngeAlarms.jar",
+            "MD5": "a8da4d1f4284465d0479cee736c56f5a"
+          }
+        },
+        {
+          "id": "com.parachute:parachutemod:1.7.4@jar",
+          "name": "Parachute Mod NG",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 235323,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/ParachuteMod.jar",
+            "MD5": "1c0afd3117e83d05ddedc22ac6aebc35"
+          }
+        },
+        {
+          "id": "com.creativemd:playerrevive:1.0@jar",
+          "name": "Player Revive",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 5132195,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/PlayerRevive.jar",
+            "MD5": "12fa41333e92e12a3c84b63ca15a3ca7"
+          }
+        },
+        {
+          "id": "com.mia.craftstudio.minecraft:ptrmodellib:1.0.4@jar",
+          "name": "Ptrmodellib",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 169483,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/PTRLib.jar",
+            "MD5": "7cdde85216395abe430a7ff185650370"
+          }
+        },
+        {
+          "id": "lumien.resourceloader:resourceloader:1.5.3@jar",
+          "name": "Resource Loader",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 16612,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/ResourceLoader.jar",
+            "MD5": "51141e882f96ce756b9b3d25f2acdf57"
+          }
+        },
+        {
+          "id": "com.tmtravlr:soundfilters:0.12.1_for_1.12@jar",
+          "name": "Sound Filters",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 43194,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/SoundFilter.jar",
+            "MD5": "e29a0cae708598ecd76e451682acefda"
+          }
+        },
+        {
+          "id": "lib:subcommonlib:sublib-1.12.2-1.2.0.4@jar",
+          "name": "Subaraki's Common Library",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 40890,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/SubLib.jar",
+            "MD5": "085b8a0156d4b8d7a5daac347317f0d0"
+          }
+        },
+        {
+          "id": "net.wazworld:vbe:1.12.2-1.0.9@jar",
+          "name": "Vanilla Builders Extension",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1417835,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/VanillaBuildersExtension.jar",
+            "MD5": "d854c58c8dc71c4c06002a2d2ceef438"
+          }
+        },
+        {
+          "id": "noppes.vc:variedcommodities:1.0@jar",
+          "name": "Varied Commodities",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1567926,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/VariedCommodities.jar",
+            "MD5": "c4abbbf3e8705c5be1769f7617041803"
+          }
+        },
+        {
+          "id": "com.mrcrayfish:vehicle:0.44.1@jar",
+          "name": "MrCrayfish's Vehicle Mod",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 6454442,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/VehicleModFarfaniaEdition.jar",
+            "MD5": "2e3d896260d9f086430cfff790c29642"
+          }
+        },
+        {
+          "id": "info.jbcs.minecraft:vending:1.12.2-3.0.1.2@jar",
+          "name": "Vending",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 389773,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/Vending.jar",
+            "MD5": "a89b3bbf606f97572f78daf5bb734c77"
+          }
+        },
+        {
+          "id": "net.gliby.voicechat:imvoice:0.7.0@jar",
+          "name": "§aImmersive Voice",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 445000,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/VoiceChat.jar",
+            "MD5": "d8bb047f700fca6ac08a88f9abb45d82"
+          }
+        },
+        {
+          "id": "net.mcft.copy.backpacks:wearablebackpacks:3.1.4@jar",
+          "name": "Wearable Backpacks",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 413940,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/WearableBackpacks.jar",
+            "MD5": "ebda4fa9dd1afbc445714bb2e8a8a083"
+          }
+        },
+        {
+          "id": "net.montoyo.wd:webdisplays:1.12.2-1.1@jar",
+          "name": "WebDisplays",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 712307,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/Webdisplays.jar",
+            "MD5": "d6d94a8075955f3d955ed866a5d344c9"
+          }
+        },
+        {
+          "id": "com.sk89q:worldedit:6.1.10-SNAPSHOT;e6b38e8@jar",
+          "name": "WorldEdit",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1479535,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/WorldEdit.jar",
+            "MD5": "bdf6d8d20591c014fed66633f4ef3b23"
+          }
+        },
+        {
+          "id": "xaero.minimap:xaerominimap:20.22.0@jar",
+          "name": "Xaero's Minimap",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 564805,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/optionalon/XaerosMinimap.jar",
+            "MD5": "be7168cf29f30fddc58edfdfa132e5e0"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "xaero.map:xaeroworldmap:1.10.3@jar",
+          "name": "Xaero's World Map",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 314793,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/optionalon/XaerosWorldMap.jar",
+            "MD5": "a16e0a5346230a6ab208131e92a4a286"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "mariot7.xlfoodmod:xlfoodmod:1.9.2@jar",
+          "name": "XL Food Mod",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 400208,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/forgemods/required/XLFoodMod.jar",
+            "MD5": "99996774ced05042e9955d76ed8c8d19"
+          }
+        },
+        {
+          "id": "mainmenu.json",
+          "name": "mainmenu.json",
+          "type": "File",
+          "artifact": {
+            "size": 5433,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/files/config/CustomMainMenu/mainmenu.json",
+            "MD5": "b57ee8b191d57f476431508ec615e3aa",
+            "path": "config/CustomMainMenu/mainmenu.json"
+          }
+        },
+        {
+          "id": "custombackgrounds.cfg",
+          "name": "custombackgrounds.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 267,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/files/config/custombackgrounds.cfg",
+            "MD5": "c06089a9000cff46ad956a266af7f68c",
+            "path": "config/custombackgrounds.cfg"
+          }
+        },
+        {
+          "id": "PowerDrop.jar",
+          "name": "PowerDrop.jar",
+          "type": "File",
+          "artifact": {
+            "size": 13862,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/files/mods/PowerDrop.jar",
+            "MD5": "58451b7868037db12362403ba521babb",
+            "path": "mods/PowerDrop.jar"
+          }
+        },
+        {
+          "id": "malisiscore-1.12.2-6.5.1.jar",
+          "name": "malisiscore-1.12.2-6.5.1.jar",
+          "type": "File",
+          "artifact": {
+            "size": 1939783,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/files/mods/malisiscore-1.12.2-6.5.1.jar",
+            "MD5": "ccc183a97d7b9688a49bf29b61343f49",
+            "path": "mods/malisiscore-1.12.2-6.5.1.jar"
+          }
+        },
+        {
+          "id": "1.png",
+          "name": "1.png",
+          "type": "File",
+          "artifact": {
+            "size": 1762027,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/files/resources/menufarfania/textures/1.png",
+            "MD5": "5d7d6498fd7ea2c0a08dc395ac554b43",
+            "path": "resources/menufarfania/textures/1.png"
+          }
+        },
+        {
+          "id": "2.png",
+          "name": "2.png",
+          "type": "File",
+          "artifact": {
+            "size": 1208564,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/files/resources/menufarfania/textures/2.png",
+            "MD5": "3066b945aed213edb099fbae17fef3e2",
+            "path": "resources/menufarfania/textures/2.png"
+          }
+        },
+        {
+          "id": "3.png",
+          "name": "3.png",
+          "type": "File",
+          "artifact": {
+            "size": 1137454,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/files/resources/menufarfania/textures/3.png",
+            "MD5": "75aa58dc92ae2f1104e55c4135a33952",
+            "path": "resources/menufarfania/textures/3.png"
+          }
+        },
+        {
+          "id": "4.png",
+          "name": "4.png",
+          "type": "File",
+          "artifact": {
+            "size": 1510962,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/files/resources/menufarfania/textures/4.png",
+            "MD5": "7b2f989edc3a1947a5cd05fdc9a5b801",
+            "path": "resources/menufarfania/textures/4.png"
+          }
+        },
+        {
+          "id": "5.png",
+          "name": "5.png",
+          "type": "File",
+          "artifact": {
+            "size": 1941179,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/files/resources/menufarfania/textures/5.png",
+            "MD5": "8da5e0e8c25b6fe6690ca3209dfdce14",
+            "path": "resources/menufarfania/textures/5.png"
+          }
+        },
+        {
+          "id": "6.png",
+          "name": "6.png",
+          "type": "File",
+          "artifact": {
+            "size": 1915912,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/files/resources/menufarfania/textures/6.png",
+            "MD5": "3dc5bc014f79c50b171fa3ac85c3c2ce",
+            "path": "resources/menufarfania/textures/6.png"
+          }
+        },
+        {
+          "id": "7.png",
+          "name": "7.png",
+          "type": "File",
+          "artifact": {
+            "size": 2418362,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/files/resources/menufarfania/textures/7.png",
+            "MD5": "cbe65081611b67825b10ae2f46bff6aa",
+            "path": "resources/menufarfania/textures/7.png"
+          }
+        },
+        {
+          "id": "8.png",
+          "name": "8.png",
+          "type": "File",
+          "artifact": {
+            "size": 3543343,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/files/resources/menufarfania/textures/8.png",
+            "MD5": "de1dcbf2e3a0d3a053645039df27cb96",
+            "path": "resources/menufarfania/textures/8.png"
+          }
+        },
+        {
+          "id": "bg_menu.png",
+          "name": "bg_menu.png",
+          "type": "File",
+          "artifact": {
+            "size": 6328,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/files/resources/menufarfania/textures/bg_menu.png",
+            "MD5": "982a96cd0b85bb5eecd13cb6841775f6",
+            "path": "resources/menufarfania/textures/bg_menu.png"
+          }
+        },
+        {
+          "id": "btn.png",
+          "name": "btn.png",
+          "type": "File",
+          "artifact": {
+            "size": 2958,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/files/resources/menufarfania/textures/btn.png",
+            "MD5": "93679909e4e3c6ba9875174da24916fd",
+            "path": "resources/menufarfania/textures/btn.png"
+          }
+        },
+        {
+          "id": "logo.png",
+          "name": "logo.png",
+          "type": "File",
+          "artifact": {
+            "size": 217201,
+            "url": "http://68.183.121.7/servers/Farfania-1.12.2/files/resources/menufarfania/textures/logo.png",
+            "MD5": "19742fb21c080b286645fbbc5d378dce",
+            "path": "resources/menufarfania/textures/logo.png"
+          }
+        }
+      ]
+    }
+  ]
 }
